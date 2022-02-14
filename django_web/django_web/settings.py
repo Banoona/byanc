@@ -16,6 +16,7 @@ import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-)^6ss%p@6gg%v&1w7#1)z68spc)4d*a@n4h(e0_2x$vwa7)*f0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'byanscake.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'byanscake.herokuapp.com',]
 
 STRIPE_SECRET_KEY = 'sk_test_51KS1h2FyszVY9qJpcjz9KXnfT8RnwynxAx5SBj4TTX4ZQguDdaOhXuNYEJOE9BAI8cLMbCPQO628PqzzVHa61HxL00ngpRZuGH'
 
@@ -134,11 +135,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media/'
+# MEDIA_ROOT = BASE_DIR / 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
