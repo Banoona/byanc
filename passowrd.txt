@@ -1,0 +1,6 @@
+admin
+admindjango
+
+stripe:
+bayulistio25@gmail.com
+transformers25
