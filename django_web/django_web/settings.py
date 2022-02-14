@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)^6ss%p@6gg%v&1w7#1)z68spc)4d*a@n4h(e0_2x$vwa7)*f0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'byanscake.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'byanscake.herokuapp.com']
 
 STRIPE_SECRET_KEY = 'sk_test_51KS1h2FyszVY9qJpcjz9KXnfT8RnwynxAx5SBj4TTX4ZQguDdaOhXuNYEJOE9BAI8cLMbCPQO628PqzzVHa61HxL00ngpRZuGH'
 
